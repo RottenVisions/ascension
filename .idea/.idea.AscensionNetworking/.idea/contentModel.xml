@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Black\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_AscensionNetworking.1824730980.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Black\Documents\__CODE_PROJECTS__\AscensionNetworking-5.0" t="IncludeFlat">
+      <e p="AscensionNetworking" t="IncludeRecursive">
+        <e p="Ascension" t="Include">
+          <e p="BaseTokens" t="Include">
+            <e p="DisconnectionInfo.cs" t="Include" />
+          </e>
+          <e p="Binary" t="Include">
+            <e p="BitSet.cs" t="Include" />
+          </e>
+          <e p="Channels" t="Include">
+            <e p="Channel.cs" t="Include" />
+            <e p="CommandChannel.cs" t="Include" />
+            <e p="EntityChannel.cs" t="Include" />
+            <e p="EventChannel.cs" t="Include" />
+            <e p="SceneLoadChannel.cs" t="Include" />
+          </e>
+          <e p="Command" t="Include">
+            <e p="Command.cs" t="Include" />
+            <e p="CommandCallbackItem.cs" t="Include" />
+            <e p="CommandCallbackModes.cs" t="Include" />
+          </e>
+          <e p="Console" t="Include">
+            <e p="NetConsole.cs" t="Include" />
+            <e p="NetLog.cs" t="Include" />
+          </e>
+          <e p="Control" t="Include">
+            <e p="ControlBehavior.cs" t="Include" />
+            <e p="ControlCommand.cs" t="Include" />
+            <e p="ControlCommandShutdown.cs" t="Include" />
+            <e p="ControlCommandStart.cs" t="Include" />
+            <e p="ControlState.cs" t="Include" />
+          </e>
+          <e p="Core" t="Include">
+            <e p="AscensionConfig.cs" t="Include" />
+            <e p="AscensionCoreInternal.cs" t="Include" />
+            <e p="AscensionEntity.cs" t="Include" />
+            <e p="AscensionEntityExtensions.cs" t="Include" />
+            <e p="AscensionException.cs" t="Include" />
+            <e p="AscensionExecutionOrder.cs" t="Include" />
+            <e p="AscensionNetwork.cs" t="Include" />
+            <e p="AscensionNetworkInternal.cs" t="Include" />
+            <e p="BaseConnection.cs" t="Include" />
+            <e p="Core.cs" t="Include" />
+            <e p="Entity.cs" t="Include" />
+            <e p="Factory.cs" t="Include" />
+            <e p="Flags.cs" t="Include" />
+            <e p="GlobalBehaviorAttribute.cs" t="Include" />
+            <e p="Poll.cs" t="Include" />
+            <e p="Send.cs" t="Include" />
+          </e>
+          <e p="Debug" t="Include">
+            <e p="AscensionConsoleWriter.cs" t="Include" />
+            <e p="AscensionNetworkUtils.cs" t="Include" />
+            <e p="AscensionShutdownPoll.cs" t="Include" />
+            <e p="AscensionUnityDebugDrawer.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="ConnectionAcceptMode.cs" t="Include" />
+            <e p="ExistsResult.cs" t="Include" />
+            <e p="RandomizationFunction.cs" t="Include" />
+            <e p="ScopeMode.cs" t="Include" />
+          </e>
+          <e p="Event" t="Include">
+            <e p="BaseGlobalEventListener.cs" t="Include" />
+            <e p="Entity" t="Include">
+              <e p="EntityBehaviour.cs" t="Include" />
+              <e p="EntityControl.cs" t="Include" />
+              <e p="EntityList.cs" t="Include" />
+              <e p="EntityLookup.cs" t="Include" />
+              <e p="EntityProxy.cs" t="Include" />
+              <e p="EntityProxyEnvelope.cs" t="Include" />
+              <e p="EntityProxyEnvelopePool.cs" t="Include" />
+            </e>
+            <e p="Event.cs" t="Include" />
+            <e p="EventDispatcher.cs" t="Include" />
+            <e p="EventDispatcherQueue.cs" t="Include" />
+            <e p="EventEnums.cs" t="Include" />
+            <e p="EventFilter.cs" t="Include" />
+            <e p="EventListener.cs" t="Include" />
+            <e p="EventReliableRecvBuffer.cs" t="Include" />
+            <e p="EventReliableSendBuffer.cs" t="Include" />
+            <e p="GlobalEventListenerBase.cs" t="Include" />
+          </e>
+          <e p="Hitbox" t="Include">
+            <e p="AscensionHitbox.cs" t="Include" />
+            <e p="AscensionHitboxBody.cs" t="Include" />
+            <e p="AscensionHitboxBodySnapshot.cs" t="Include" />
+            <e p="AscensionHitboxShape.cs" t="Include" />
+            <e p="AscensionHitboxType.cs" t="Include" />
+            <e p="AscensionHitboxWorldSnapshot.cs" t="Include" />
+            <e p="AscensionHitboxWorldSnapshotPool.cs" t="Include" />
+            <e p="AscensionPhysics.cs" t="Include" />
+            <e p="AscensionPhysicsHits.cs" t="Include" />
+            <e p="Base" t="Include">
+              <e p="Hitbox.cs" t="Include" />
+              <e p="HitboxBodySnapshot.cs" t="Include" />
+              <e p="HitboxBodySnapshot_Raycast.cs" t="Include" />
+              <e p="RaycastHitsCollection.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IEntityBehavior.cs" t="Include" />
+            <e p="IEntitySerializer.cs" t="Include" />
+            <e p="IFactory.cs" t="Include" />
+            <e p="INetworkCommandData.cs" t="Include" />
+            <e p="IPrefabPool.cs" t="Include" />
+            <e p="IPriorityCalculator.cs" t="Include" />
+          </e>
+          <e p="Messages" t="Include">
+            <e p="Message.cs" t="Include" />
+            <e p="MessageRider.cs" t="Include" />
+            <e p="MessageType.cs" t="Include" />
+          </e>
+          <e p="Network" t="Include">
+            <e p="NetObject.cs" t="Include" />
+            <e p="NetObjectPool.cs" t="Include" />
+            <e p="NetworkId.cs" t="Include" />
+            <e p="NetworkModes.cs" t="Include" />
+            <e p="NetworkValue.cs" t="Include" />
+          </e>
+          <e p="Packet" t="Include">
+            <e p="BasePacket.cs" t="Include" />
+            <e p="BasePacketPool.cs" t="Include" />
+            <e p="Packet.cs" t="Include" />
+            <e p="PacketPool.cs" t="Include" />
+            <e p="PacketStats.cs" t="Include" />
+          </e>
+          <e p="Scene" t="Include">
+            <e p="SceneLoader.cs" t="Include" />
+            <e p="SceneLoadState.cs" t="Include" />
+          </e>
+          <e p="Settings" t="Include">
+            <e p="ConfigLogTargets.cs" t="Include" />
+            <e p="DefaultPrefabPool.cs" t="Include" />
+            <e p="EditorStartMode.cs" t="Include" />
+            <e p="PrefabDatabase.cs" t="Include" />
+            <e p="RuntimeSettings.cs" t="Include" />
+          </e>
+          <e p="State" t="Include">
+            <e p="Arrays" t="Include">
+              <e p="Entity.cs" t="Include" />
+              <e p="Float.cs" t="Include" />
+              <e p="Integer.cs" t="Include" />
+              <e p="PrefabId.cs" t="Include" />
+              <e p="ProtocolToken.cs" t="Include" />
+              <e p="Quaternion.cs" t="Include" />
+              <e p="String.cs" t="Include" />
+              <e p="Transform.cs" t="Include" />
+              <e p="Vector.cs" t="Include" />
+            </e>
+            <e p="DoubleBuffer.cs" t="Include" />
+            <e p="Enums.cs" t="Include" />
+            <e p="Filter.cs" t="Include" />
+            <e p="Indices.cs" t="Include" />
+            <e p="IState.cs" t="Include" />
+            <e p="NetworkArray_Meta.cs" t="Include" />
+            <e p="NetworkArray_Objects.cs" t="Include" />
+            <e p="NetworkArray_Values.cs" t="Include" />
+            <e p="NetworkObj.cs" t="Include" />
+            <e p="NetworkObj_Meta.cs" t="Include" />
+            <e p="NetworkProperty.cs" t="Include" />
+            <e p="NetworkProperty_Mecanim.cs" t="Include" />
+            <e p="NetworkPropertyInfo.cs" t="Include" />
+            <e p="NetworkState.cs" t="Include" />
+            <e p="NetworkState.IEntitySerializer.cs" t="Include" />
+            <e p="NetworkState.IState.cs" t="Include" />
+            <e p="NetworkState_Meta.cs" t="Include" />
+            <e p="NetworkStorage.cs" t="Include" />
+            <e p="NetworkTransform.cs" t="Include" />
+            <e p="NetworkTrigger.cs" t="Include" />
+            <e p="Priority.cs" t="Include" />
+            <e p="Properties" t="Include">
+              <e p="Bool.cs" t="Include" />
+              <e p="Color.cs" t="Include" />
+              <e p="Color32.cs" t="Include" />
+              <e p="Entity.cs" t="Include" />
+              <e p="Float.cs" t="Include" />
+              <e p="Guid.cs" t="Include" />
+              <e p="Integer.cs" t="Include" />
+              <e p="Matrix4x4.cs" t="Include" />
+              <e p="NetworkId.cs" t="Include" />
+              <e p="PrefabId.cs" t="Include" />
+              <e p="ProtocolToken.cs" t="Include" />
+              <e p="Quaternion.cs" t="Include" />
+              <e p="String.cs" t="Include" />
+              <e p="Transform.cs" t="Include" />
+              <e p="Trigger.cs" t="Include" />
+              <e p="Vector.cs" t="Include" />
+            </e>
+            <e p="PropertyCallback.cs" t="Include" />
+            <e p="Settings" t="Include">
+              <e p="Command.cs" t="Include" />
+              <e p="Compression" t="Include">
+                <e p="Float.cs" t="Include" />
+                <e p="Int.cs" t="Include" />
+                <e p="Quaternion.cs" t="Include" />
+                <e p="Transform.cs" t="Include" />
+                <e p="Vector.cs" t="Include" />
+              </e>
+              <e p="Extrapolation.cs" t="Include" />
+              <e p="Float.cs" t="Include" />
+              <e p="Interpolation.cs" t="Include" />
+              <e p="String.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Utilities" t="Include">
+            <e p="ByteConverter.cs" t="Include" />
+            <e p="DebugInfo.cs" t="Include" />
+            <e p="Ids.cs" t="Include" />
+            <e p="IListNode.cs" t="Include" />
+            <e p="Iterator.cs" t="Include" />
+            <e p="ListExtended.cs" t="Include" />
+            <e p="ListExtendedSingular.cs" t="Include" />
+            <e p="LoadOperation.cs" t="Include" />
+            <e p="NetAssert.cs" t="Include" />
+            <e p="NetGUI.cs" t="Include" />
+            <e p="NetMath.cs" t="Include" />
+            <e p="NetTuple.cs" t="Include" />
+            <e p="RingBuffer.cs" t="Include" />
+            <e p="SequenceGenerator.cs" t="Include" />
+            <e p="StreamData.cs" t="Include" />
+            <e p="UniqueId.cs" t="Include" />
+            <e p="Utils.cs" t="Include" />
+          </e>
+        </e>
+        <e p="AscensionNetworking.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="External" t="Include">
+          <e p="Compiler" t="Include">
+            <e p="Auxilary" t="Include" />
+            <e p="CodeGenerator" t="Include">
+              <e p="Decorators" t="Include">
+                <e p="Asset" t="Include" />
+                <e p="Property" t="Include" />
+              </e>
+              <e p="Emitters" t="Include">
+                <e p="Assets" t="Include" />
+                <e p="Property" t="Include" />
+              </e>
+            </e>
+            <e p="Property" t="Include">
+              <e p="Settings" t="Include" />
+              <e p="Type" t="Include" />
+            </e>
+            <e p="Type" t="Include" />
+          </e>
+        </e>
+        <e p="LANBroadcast" t="Include">
+          <e p="BroadcastManager.cs" t="Include" />
+          <e p="LanManager.cs" t="Include" />
+          <e p="LanWorker.cs" t="Include" />
+          <e p="UDPLANBroadcasting.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Sockets" t="Include">
+          <e p="Configuration" t="Include">
+            <e p="Configuration.cs" t="Include" />
+          </e>
+          <e p="Connection" t="Include">
+            <e p="Connection.cs" t="Include" />
+            <e p="PacketStatistic.cs" t="Include" />
+          </e>
+          <e p="LAN" t="Include">
+            <e p="NetworkDiscovery.cs" t="Include" />
+          </e>
+          <e p="Socket" t="Include">
+            <e p="SocketConnection.cs" t="Include" />
+            <e p="SocketConnectionInfo.cs" t="Include" />
+            <e p="SocketEndPoint.cs" t="Include" />
+            <e p="SocketEnums.cs" t="Include" />
+            <e p="SocketEvent.cs" t="Include" />
+            <e p="SocketEventListenerBase.cs" t="Include" />
+            <e p="SocketInterface.cs" t="Include" />
+            <e p="SocketLog.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Tools" t="Include">
+          <e p="SerializationConverter.cs" t="Include" />
+        </e>
+      </e>
+      <e p="AscensionNetworking.Editor" t="IncludeRecursive">
+        <e p="AscensionNetworking.Editor.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="External" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AscensionBackgroundSaver.cs" t="Include" />
+            <e p="AscensionConnectionsWindow.cs" t="Include" />
+            <e p="AscensionDataAssemblyCompiler.cs" t="Include" />
+            <e p="AscensionEditorWindow.cs" t="Include" />
+            <e p="AscensionEntityEditor.cs" t="Include" />
+            <e p="AscensionExecutionorderManager.cs" t="Include" />
+            <e p="AscensionHitboxBodyEditor.cs" t="Include" />
+            <e p="AscensionProjectWindow.cs" t="Include" />
+            <e p="AscensionWindow.cs" t="Include" />
+            <e p="CodeGen" t="Include">
+              <e p="Assert.cs" t="Include" />
+              <e p="AssetFolder.cs" t="Include" />
+              <e p="Auxilary" t="Include">
+                <e p="Enums.cs" t="Include" />
+              </e>
+              <e p="CodeGenerator" t="Include">
+                <e p="CodeGenerator.cs" t="Include" />
+                <e p="Decorators" t="Include">
+                  <e p="Asset" t="Include">
+                    <e p="AssetDecorator.cs" t="Include" />
+                    <e p="CommandDecorator.cs" t="Include" />
+                    <e p="EventDecorator.cs" t="Include" />
+                    <e p="ObjectDecorator.cs" t="Include" />
+                    <e p="StateDecorator.cs" t="Include" />
+                  </e>
+                  <e p="Property" t="Include">
+                    <e p="PropertyDecorator.cs" t="Include" />
+                    <e p="PropertyDecoratorArray.cs" t="Include" />
+                    <e p="PropertyDecoratorBool.cs" t="Include" />
+                    <e p="PropertyDecoratorColor.cs" t="Include" />
+                    <e p="PropertyDecoratorColor32.cs" t="Include" />
+                    <e p="PropertyDecoratorEntity.cs" t="Include" />
+                    <e p="PropertyDecoratorFloat.cs" t="Include" />
+                    <e p="PropertyDecoratorGuid.cs" t="Include" />
+                    <e p="PropertyDecoratorInteger.cs" t="Include" />
+                    <e p="PropertyDecoratorMatrix4x4.cs" t="Include" />
+                    <e p="PropertyDecoratorPrefabId.cs" t="Include" />
+                    <e p="PropertyDecoratorProtocolToken.cs" t="Include" />
+                    <e p="PropertyDecoratorQuaternion.cs" t="Include" />
+                    <e p="PropertyDecoratorString.cs" t="Include" />
+                    <e p="PropertyDecoratorStruct.cs" t="Include" />
+                    <e p="PropertyDecoratorTransform.cs" t="Include" />
+                    <e p="PropertyDecoratorTrigger.cs" t="Include" />
+                    <e p="PropertyDecoratorUniqueId.cs" t="Include" />
+                    <e p="PropertyDecoratorVector.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Dom.cs" t="Include" />
+                <e p="DomBlock.cs" t="Include" />
+                <e p="Emitters" t="Include">
+                  <e p="Assets" t="Include">
+                    <e p="AssetCodeEmitter.cs" t="Include" />
+                    <e p="CommandCodeEmitter.cs" t="Include" />
+                    <e p="EventCodeEmitter.cs" t="Include" />
+                    <e p="StateCodeEmitter.cs" t="Include" />
+                  </e>
+                  <e p="Property" t="Include">
+                    <e p="PropertyCodeEmitter.cs" t="Include" />
+                    <e p="PropertyCodeEmitterArray.cs" t="Include" />
+                    <e p="PropertyCodeEmitterBool.cs" t="Include" />
+                    <e p="PropertyCodeEmitterColor.cs" t="Include" />
+                    <e p="PropertyCodeEmitterColor32.cs" t="Include" />
+                    <e p="PropertyCodeEmitterEntity.cs" t="Include" />
+                    <e p="PropertyCodeEmitterFloat.cs" t="Include" />
+                    <e p="PropertyCodeEmitterGuid.cs" t="Include" />
+                    <e p="PropertyCodeEmitterInteger.cs" t="Include" />
+                    <e p="PropertyCodeEmitterMatrix4x4.cs" t="Include" />
+                    <e p="PropertyCodeEmitterPrefabId.cs" t="Include" />
+                    <e p="PropertyCodeEmitterProtocolToken.cs" t="Include" />
+                    <e p="PropertyCodeEmitterQuaternion.cs" t="Include" />
+                    <e p="PropertyCodeEmitterString.cs" t="Include" />
+                    <e p="PropertyCodeEmitterStruct.cs" t="Include" />
+                    <e p="PropertyCodeEmitterTransform.cs" t="Include" />
+                    <e p="PropertyCodeEmitterTrigger.cs" t="Include" />
+                    <e p="PropertyCodeEmitterUniqueId.cs" t="Include" />
+                    <e p="PropertyCodeEmitterVector.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Color.cs" t="Include" />
+              <e p="FilterDefinition.cs" t="Include" />
+              <e p="FloatCompression.cs" t="Include" />
+              <e p="NamedAsset.cs" t="Include" />
+              <e p="Project.cs" t="Include" />
+              <e p="Property" t="Include">
+                <e p="PropertyDefinition.cs" t="Include" />
+                <e p="Settings" t="Include">
+                  <e p="PropertyAssetSettings.cs" t="Include" />
+                  <e p="PropertyCommandSettings.cs" t="Include" />
+                  <e p="PropertyEventSettings.cs" t="Include" />
+                  <e p="PropertyStateSettings.cs" t="Include" />
+                </e>
+                <e p="Type" t="Include">
+                  <e p="PropertyType.cs" t="Include" />
+                  <e p="PropertyTypeArray.cs" t="Include" />
+                  <e p="PropertyTypeBool.cs" t="Include" />
+                  <e p="PropertyTypeColor.cs" t="Include" />
+                  <e p="PropertyTypeColor32.cs" t="Include" />
+                  <e p="PropertyTypeEntity.cs" t="Include" />
+                  <e p="PropertyTypeFloat.cs" t="Include" />
+                  <e p="PropertyTypeGuid.cs" t="Include" />
+                  <e p="PropertyTypeInteger.cs" t="Include" />
+                  <e p="PropertyTypeMatrix4x4.cs" t="Include" />
+                  <e p="PropertyTypeNetworkId.cs" t="Include" />
+                  <e p="PropertyTypePrefabId.cs" t="Include" />
+                  <e p="PropertyTypeProcotolToken.cs" t="Include" />
+                  <e p="PropertyTypeQuaternion.cs" t="Include" />
+                  <e p="PropertyTypeString.cs" t="Include" />
+                  <e p="PropertyTypeStruct.cs" t="Include" />
+                  <e p="PropertyTypeTransform.cs" t="Include" />
+                  <e p="PropertyTypeTrigger.cs" t="Include" />
+                  <e p="PropertyTypeVector.cs" t="Include" />
+                </e>
+              </e>
+              <e p="SerializerUtils.cs" t="Include" />
+              <e p="Type" t="Include">
+                <e p="AssetDefinition.cs" t="Include" />
+                <e p="AssetEnums.cs" t="Include" />
+                <e p="CommandDefinition.cs" t="Include" />
+                <e p="EventDefinition.cs" t="Include" />
+                <e p="StateDefinition.cs" t="Include" />
+                <e p="StructDefinition.cs" t="Include" />
+              </e>
+              <e p="Utils.cs" t="Include" />
+            </e>
+            <e p="Compiler" t="Include">
+              <e p="AscensionCompiler.CompileAssemblyInfo.cs" t="Include" />
+              <e p="AscensionCompiler.CompileMaps.cs" t="Include" />
+              <e p="AscensionCompiler.CompileNetwork.cs" t="Include" />
+              <e p="AscensionCompiler.CompilePrefabs.cs" t="Include" />
+              <e p="AscensionCompiler.cs" t="Include" />
+              <e p="AscensionCompilerOperation.cs" t="Include" />
+              <e p="AscensionSourceFile.cs" t="Include" />
+            </e>
+            <e p="EditorSaver.cs" t="Include" />
+            <e p="EditorUtils.cs" t="Include" />
+            <e p="MenuItems.cs" t="Include" />
+            <e p="PrefabCompiler.cs" t="Include" />
+            <e p="PrefabDatabaseEditor.cs" t="Include" />
+            <e p="PropertyEditors" t="Include">
+              <e p="PropertyEditor.cs" t="Include" />
+              <e p="PropertyEditorArray.cs" t="Include" />
+              <e p="PropertyEditorEntity.cs" t="Include" />
+              <e p="PropertyEditorFloat.cs" t="Include" />
+              <e p="PropertyEditorInteger.cs" t="Include" />
+              <e p="PropertyEditorQuaternion.cs" t="Include" />
+              <e p="PropertyEditorString.cs" t="Include" />
+              <e p="PropertyEditorStruct.cs" t="Include" />
+              <e p="PropertyEditorTransform.cs" t="Include" />
+              <e p="PropertyEditorVector.cs" t="Include" />
+            </e>
+            <e p="RuntimeSettingsEditor.cs" t="Include" />
+            <e p="SceneLauncher.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Sockets" t="Include">
+          <e p="LAN" t="Include">
+            <e p="Editor" t="Include">
+              <e p="NetworkDiscoveryEditor.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Tools" t="Include">
+          <e p="Editor" t="Include">
+            <e p="EditorGUI.cs" t="Include" />
+            <e p="ScriptableObjectUtility.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="AscensionNetworking.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

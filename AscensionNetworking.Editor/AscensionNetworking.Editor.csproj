@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AC29759-531C-4187-97B7-C6096DE60F96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ascension.Editor</RootNamespace>
+    <AssemblyName>Ascension.Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5;UNITY_EDITOR;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>..\Networking\Ascension\Plugins\Profobuf\Editor\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="External\Editor\AscensionBackgroundSaver.cs" />
+    <Compile Include="External\Editor\AscensionConnectionsWindow.cs" />
+    <Compile Include="External\Editor\AscensionDataAssemblyCompiler.cs" />
+    <Compile Include="External\Editor\AscensionEditorWindow.cs" />
+    <Compile Include="External\Editor\AscensionEntityEditor.cs" />
+    <Compile Include="External\Editor\AscensionExecutionorderManager.cs" />
+    <Compile Include="External\Editor\AscensionHitboxBodyEditor.cs" />
+    <Compile Include="External\Editor\AscensionProjectWindow.cs" />
+    <Compile Include="External\Editor\AscensionWindow.cs" />
+    <Compile Include="External\Editor\CodeGen\Assert.cs" />
+    <Compile Include="External\Editor\CodeGen\AssetFolder.cs" />
+    <Compile Include="External\Editor\CodeGen\Auxilary\Enums.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\CodeGenerator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Asset\AssetDecorator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Asset\CommandDecorator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Asset\EventDecorator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Asset\ObjectDecorator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Asset\StateDecorator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecorator.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorArray.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorBool.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorColor.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorColor32.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorEntity.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorFloat.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorGuid.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorInteger.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorMatrix4x4.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorPrefabId.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorProtocolToken.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorQuaternion.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorString.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorStruct.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorTransform.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorTrigger.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorUniqueId.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Decorators\Property\PropertyDecoratorVector.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Dom.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\DomBlock.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Assets\AssetCodeEmitter.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Assets\CommandCodeEmitter.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Assets\EventCodeEmitter.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Assets\StateCodeEmitter.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitter.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterArray.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterBool.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterColor.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterColor32.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterEntity.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterFloat.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterGuid.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterInteger.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterMatrix4x4.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterPrefabId.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterProtocolToken.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterQuaternion.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterString.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterStruct.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterTransform.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterTrigger.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterUniqueId.cs" />
+    <Compile Include="External\Editor\CodeGen\CodeGenerator\Emitters\Property\PropertyCodeEmitterVector.cs" />
+    <Compile Include="External\Editor\CodeGen\Color.cs" />
+    <Compile Include="External\Editor\CodeGen\FilterDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\FloatCompression.cs" />
+    <Compile Include="External\Editor\CodeGen\NamedAsset.cs" />
+    <Compile Include="External\Editor\CodeGen\Project.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\PropertyDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Settings\PropertyAssetSettings.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Settings\PropertyCommandSettings.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Settings\PropertyEventSettings.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Settings\PropertyStateSettings.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyType.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeArray.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeBool.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeColor.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeColor32.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeEntity.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeFloat.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeGuid.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeInteger.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeMatrix4x4.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeNetworkId.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypePrefabId.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeProcotolToken.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeQuaternion.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeString.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeStruct.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeTransform.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeTrigger.cs" />
+    <Compile Include="External\Editor\CodeGen\Property\Type\PropertyTypeVector.cs" />
+    <Compile Include="External\Editor\CodeGen\SerializerUtils.cs" />
+    <Compile Include="External\Editor\CodeGen\Type\AssetDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\Type\AssetEnums.cs" />
+    <Compile Include="External\Editor\CodeGen\Type\CommandDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\Type\EventDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\Type\StateDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\Type\StructDefinition.cs" />
+    <Compile Include="External\Editor\CodeGen\Utils.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionCompiler.CompileAssemblyInfo.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionCompiler.CompileMaps.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionCompiler.CompileNetwork.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionCompiler.CompilePrefabs.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionCompiler.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionCompilerOperation.cs" />
+    <Compile Include="External\Editor\Compiler\AscensionSourceFile.cs" />
+    <Compile Include="External\Editor\EditorSaver.cs" />
+    <Compile Include="External\Editor\EditorUtils.cs" />
+    <Compile Include="External\Editor\MenuItems.cs" />
+    <Compile Include="External\Editor\PrefabCompiler.cs" />
+    <Compile Include="External\Editor\PrefabDatabaseEditor.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditor.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorArray.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorEntity.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorFloat.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorInteger.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorQuaternion.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorString.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorStruct.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorTransform.cs" />
+    <Compile Include="External\Editor\PropertyEditors\PropertyEditorVector.cs" />
+    <Compile Include="External\Editor\RuntimeSettingsEditor.cs" />
+    <Compile Include="External\Editor\SceneLauncher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sockets\LAN\Editor\NetworkDiscoveryEditor.cs" />
+    <Compile Include="Tools\Editor\EditorGUI.cs" />
+    <Compile Include="Tools\Editor\ScriptableObjectUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AscensionNetworking\AscensionNetworking.csproj">
+      <Project>{c6023bab-8634-4942-91ed-cfbd2949a5b6}</Project>
+      <Name>AscensionNetworking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

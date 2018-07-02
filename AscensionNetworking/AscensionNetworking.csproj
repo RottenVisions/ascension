@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6023BAB-8634-4942-91ED-CFBD2949A5B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ascension</RootNamespace>
+    <AssemblyName>Ascension</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascender, Version=1.0.6048.11449, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Networking\Ascension\Plugins\Ascender.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ascension\BaseTokens\DisconnectionInfo.cs" />
+    <Compile Include="Ascension\Binary\BitSet.cs" />
+    <Compile Include="Ascension\Channels\Channel.cs" />
+    <Compile Include="Ascension\Channels\CommandChannel.cs" />
+    <Compile Include="Ascension\Channels\EntityChannel.cs" />
+    <Compile Include="Ascension\Channels\EventChannel.cs" />
+    <Compile Include="Ascension\Channels\SceneLoadChannel.cs" />
+    <Compile Include="Ascension\Command\Command.cs" />
+    <Compile Include="Ascension\Command\CommandCallbackItem.cs" />
+    <Compile Include="Ascension\Command\CommandCallbackModes.cs" />
+    <Compile Include="Ascension\Console\NetConsole.cs" />
+    <Compile Include="Ascension\Console\NetLog.cs" />
+    <Compile Include="Ascension\Control\ControlBehavior.cs" />
+    <Compile Include="Ascension\Control\ControlCommand.cs" />
+    <Compile Include="Ascension\Control\ControlCommandShutdown.cs" />
+    <Compile Include="Ascension\Control\ControlCommandStart.cs" />
+    <Compile Include="Ascension\Control\ControlState.cs" />
+    <Compile Include="Ascension\Core\AscensionConfig.cs" />
+    <Compile Include="Ascension\Core\AscensionCoreInternal.cs" />
+    <Compile Include="Ascension\Core\AscensionEntity.cs" />
+    <Compile Include="Ascension\Core\AscensionEntityExtensions.cs" />
+    <Compile Include="Ascension\Core\AscensionException.cs" />
+    <Compile Include="Ascension\Core\AscensionExecutionOrder.cs" />
+    <Compile Include="Ascension\Core\AscensionNetwork.cs" />
+    <Compile Include="Ascension\Core\AscensionNetworkInternal.cs" />
+    <Compile Include="Ascension\Core\BaseConnection.cs" />
+    <Compile Include="Ascension\Core\Core.cs" />
+    <Compile Include="Ascension\Core\Entity.cs" />
+    <Compile Include="Ascension\Core\Factory.cs" />
+    <Compile Include="Ascension\Core\Flags.cs" />
+    <Compile Include="Ascension\Core\GlobalBehaviorAttribute.cs" />
+    <Compile Include="Ascension\Core\Poll.cs" />
+    <Compile Include="Ascension\Core\Send.cs" />
+    <Compile Include="Ascension\Debug\AscensionConsoleWriter.cs" />
+    <Compile Include="Ascension\Debug\AscensionNetworkUtils.cs" />
+    <Compile Include="Ascension\Debug\AscensionShutdownPoll.cs" />
+    <Compile Include="Ascension\Debug\AscensionUnityDebugDrawer.cs" />
+    <Compile Include="Ascension\Enums\ConnectionAcceptMode.cs" />
+    <Compile Include="Ascension\Enums\ExistsResult.cs" />
+    <Compile Include="Ascension\Enums\RandomizationFunction.cs" />
+    <Compile Include="Ascension\Enums\ScopeMode.cs" />
+    <Compile Include="Ascension\Event\BaseGlobalEventListener.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityBehaviour.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityControl.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityList.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityLookup.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityProxy.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityProxyEnvelope.cs" />
+    <Compile Include="Ascension\Event\Entity\EntityProxyEnvelopePool.cs" />
+    <Compile Include="Ascension\Event\Event.cs" />
+    <Compile Include="Ascension\Event\EventDispatcher.cs" />
+    <Compile Include="Ascension\Event\EventDispatcherQueue.cs" />
+    <Compile Include="Ascension\Event\EventEnums.cs" />
+    <Compile Include="Ascension\Event\EventFilter.cs" />
+    <Compile Include="Ascension\Event\EventListener.cs" />
+    <Compile Include="Ascension\Event\EventReliableRecvBuffer.cs" />
+    <Compile Include="Ascension\Event\EventReliableSendBuffer.cs" />
+    <Compile Include="Ascension\Event\GlobalEventListenerBase.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitbox.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitboxBody.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitboxBodySnapshot.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitboxShape.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitboxType.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitboxWorldSnapshot.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionHitboxWorldSnapshotPool.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionPhysics.cs" />
+    <Compile Include="Ascension\Hitbox\AscensionPhysicsHits.cs" />
+    <Compile Include="Ascension\Hitbox\Base\Hitbox.cs" />
+    <Compile Include="Ascension\Hitbox\Base\HitboxBodySnapshot.cs" />
+    <Compile Include="Ascension\Hitbox\Base\HitboxBodySnapshot_Raycast.cs" />
+    <Compile Include="Ascension\Hitbox\Base\RaycastHitsCollection.cs" />
+    <Compile Include="Ascension\Interfaces\IEntityBehavior.cs" />
+    <Compile Include="Ascension\Interfaces\IEntitySerializer.cs" />
+    <Compile Include="Ascension\Interfaces\IFactory.cs" />
+    <Compile Include="Ascension\Interfaces\INetworkCommandData.cs" />
+    <Compile Include="Ascension\Interfaces\IPrefabPool.cs" />
+    <Compile Include="Ascension\Interfaces\IPriorityCalculator.cs" />
+    <Compile Include="Ascension\Messages\Message.cs" />
+    <Compile Include="Ascension\Messages\MessageRider.cs" />
+    <Compile Include="Ascension\Messages\MessageType.cs" />
+    <Compile Include="Ascension\Network\NetObject.cs" />
+    <Compile Include="Ascension\Network\NetObjectPool.cs" />
+    <Compile Include="Ascension\Network\NetworkId.cs" />
+    <Compile Include="Ascension\Network\NetworkModes.cs" />
+    <Compile Include="Ascension\Network\NetworkValue.cs" />
+    <Compile Include="Ascension\Packet\BasePacket.cs" />
+    <Compile Include="Ascension\Packet\BasePacketPool.cs" />
+    <Compile Include="Ascension\Packet\Packet.cs" />
+    <Compile Include="Ascension\Packet\PacketPool.cs" />
+    <Compile Include="Ascension\Packet\PacketStats.cs" />
+    <Compile Include="Ascension\Scene\SceneLoader.cs" />
+    <Compile Include="Ascension\Scene\SceneLoadState.cs" />
+    <Compile Include="Ascension\Settings\ConfigLogTargets.cs" />
+    <Compile Include="Ascension\Settings\DefaultPrefabPool.cs" />
+    <Compile Include="Ascension\Settings\EditorStartMode.cs" />
+    <Compile Include="Ascension\Settings\PrefabDatabase.cs" />
+    <Compile Include="Ascension\Settings\RuntimeSettings.cs" />
+    <Compile Include="Ascension\State\Arrays\Entity.cs" />
+    <Compile Include="Ascension\State\Arrays\Float.cs" />
+    <Compile Include="Ascension\State\Arrays\Integer.cs" />
+    <Compile Include="Ascension\State\Arrays\PrefabId.cs" />
+    <Compile Include="Ascension\State\Arrays\ProtocolToken.cs" />
+    <Compile Include="Ascension\State\Arrays\Quaternion.cs" />
+    <Compile Include="Ascension\State\Arrays\String.cs" />
+    <Compile Include="Ascension\State\Arrays\Transform.cs" />
+    <Compile Include="Ascension\State\Arrays\Vector.cs" />
+    <Compile Include="Ascension\State\DoubleBuffer.cs" />
+    <Compile Include="Ascension\State\Enums.cs" />
+    <Compile Include="Ascension\State\Filter.cs" />
+    <Compile Include="Ascension\State\Indices.cs" />
+    <Compile Include="Ascension\State\IState.cs" />
+    <Compile Include="Ascension\State\NetworkArray_Meta.cs" />
+    <Compile Include="Ascension\State\NetworkArray_Objects.cs" />
+    <Compile Include="Ascension\State\NetworkArray_Values.cs" />
+    <Compile Include="Ascension\State\NetworkObj.cs" />
+    <Compile Include="Ascension\State\NetworkObj_Meta.cs" />
+    <Compile Include="Ascension\State\NetworkProperty.cs" />
+    <Compile Include="Ascension\State\NetworkPropertyInfo.cs" />
+    <Compile Include="Ascension\State\NetworkProperty_Mecanim.cs" />
+    <Compile Include="Ascension\State\NetworkState.cs" />
+    <Compile Include="Ascension\State\NetworkState.IEntitySerializer.cs" />
+    <Compile Include="Ascension\State\NetworkState.IState.cs" />
+    <Compile Include="Ascension\State\NetworkState_Meta.cs" />
+    <Compile Include="Ascension\State\NetworkStorage.cs" />
+    <Compile Include="Ascension\State\NetworkTransform.cs" />
+    <Compile Include="Ascension\State\NetworkTrigger.cs" />
+    <Compile Include="Ascension\State\Priority.cs" />
+    <Compile Include="Ascension\State\Properties\Bool.cs" />
+    <Compile Include="Ascension\State\Properties\Color.cs" />
+    <Compile Include="Ascension\State\Properties\Color32.cs" />
+    <Compile Include="Ascension\State\Properties\Entity.cs" />
+    <Compile Include="Ascension\State\Properties\Float.cs" />
+    <Compile Include="Ascension\State\Properties\Guid.cs" />
+    <Compile Include="Ascension\State\Properties\Integer.cs" />
+    <Compile Include="Ascension\State\Properties\Matrix4x4.cs" />
+    <Compile Include="Ascension\State\Properties\NetworkId.cs" />
+    <Compile Include="Ascension\State\Properties\PrefabId.cs" />
+    <Compile Include="Ascension\State\Properties\ProtocolToken.cs" />
+    <Compile Include="Ascension\State\Properties\Quaternion.cs" />
+    <Compile Include="Ascension\State\Properties\String.cs" />
+    <Compile Include="Ascension\State\Properties\Transform.cs" />
+    <Compile Include="Ascension\State\Properties\Trigger.cs" />
+    <Compile Include="Ascension\State\Properties\Vector.cs" />
+    <Compile Include="Ascension\State\PropertyCallback.cs" />
+    <Compile Include="Ascension\State\Settings\Command.cs" />
+    <Compile Include="Ascension\State\Settings\Compression\Float.cs" />
+    <Compile Include="Ascension\State\Settings\Compression\Int.cs" />
+    <Compile Include="Ascension\State\Settings\Compression\Quaternion.cs" />
+    <Compile Include="Ascension\State\Settings\Compression\Transform.cs" />
+    <Compile Include="Ascension\State\Settings\Compression\Vector.cs" />
+    <Compile Include="Ascension\State\Settings\Extrapolation.cs" />
+    <Compile Include="Ascension\State\Settings\Float.cs" />
+    <Compile Include="Ascension\State\Settings\Interpolation.cs" />
+    <Compile Include="Ascension\State\Settings\String.cs" />
+    <Compile Include="Ascension\Utilities\ByteConverter.cs" />
+    <Compile Include="Ascension\Utilities\DebugInfo.cs" />
+    <Compile Include="Ascension\Utilities\Ids.cs" />
+    <Compile Include="Ascension\Utilities\IListNode.cs" />
+    <Compile Include="Ascension\Utilities\Iterator.cs" />
+    <Compile Include="Ascension\Utilities\ListExtended.cs" />
+    <Compile Include="Ascension\Utilities\ListExtendedSingular.cs" />
+    <Compile Include="Ascension\Utilities\LoadOperation.cs" />
+    <Compile Include="Ascension\Utilities\NetAssert.cs" />
+    <Compile Include="Ascension\Utilities\NetGUI.cs" />
+    <Compile Include="Ascension\Utilities\NetMath.cs" />
+    <Compile Include="Ascension\Utilities\NetTuple.cs" />
+    <Compile Include="Ascension\Utilities\RingBuffer.cs" />
+    <Compile Include="Ascension\Utilities\SequenceGenerator.cs" />
+    <Compile Include="Ascension\Utilities\StreamData.cs" />
+    <Compile Include="Ascension\Utilities\UniqueId.cs" />
+    <Compile Include="Ascension\Utilities\Utils.cs" />
+    <Compile Include="LANBroadcast\BroadcastManager.cs" />
+    <Compile Include="LANBroadcast\LanManager.cs" />
+    <Compile Include="LANBroadcast\LanWorker.cs" />
+    <Compile Include="LANBroadcast\UDPLANBroadcasting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sockets\Configuration\Configuration.cs" />
+    <Compile Include="Sockets\Connection\Connection.cs" />
+    <Compile Include="Sockets\Connection\PacketStatistic.cs" />
+    <Compile Include="Sockets\LAN\NetworkDiscovery.cs" />
+    <Compile Include="Sockets\Socket\SocketConnection.cs" />
+    <Compile Include="Sockets\Socket\SocketConnectionInfo.cs" />
+    <Compile Include="Sockets\Socket\SocketEndPoint.cs" />
+    <Compile Include="Sockets\Socket\SocketEnums.cs" />
+    <Compile Include="Sockets\Socket\SocketEvent.cs" />
+    <Compile Include="Sockets\Socket\SocketEventListenerBase.cs" />
+    <Compile Include="Sockets\Socket\SocketInterface.cs" />
+    <Compile Include="Sockets\Socket\SocketLog.cs" />
+    <Compile Include="Tools\SerializationConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="External\Compiler\Auxilary\" />
+    <Folder Include="External\Compiler\CodeGenerator\Decorators\Asset\" />
+    <Folder Include="External\Compiler\CodeGenerator\Decorators\Property\" />
+    <Folder Include="External\Compiler\CodeGenerator\Emitters\Assets\" />
+    <Folder Include="External\Compiler\CodeGenerator\Emitters\Property\" />
+    <Folder Include="External\Compiler\Property\Settings\" />
+    <Folder Include="External\Compiler\Property\Type\" />
+    <Folder Include="External\Compiler\Type\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
